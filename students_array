@@ -1,0 +1,16 @@
+
+[1mFrom:[0m /root/oo-student-scraper-onl01-seng-ft-041320/lib/scraper.rb @ line 15 Scraper.scrape_index_page:
+
+     [1;34m6[0m: [32mdef[0m [1;36mself[0m.[1;34mscrape_index_page[0m(index_url)
+     [1;34m7[0m:   doc = [1;34;4mNokogiri[0m::HTML(open(index_url))
+     [1;34m8[0m:   students_array = []
+     [1;34m9[0m:   doc.css([31m[1;31m"[0m[31mdiv.student-card[1;31m"[0m[31m[0m).each [32mdo[0m |student|
+    [1;34m10[0m:     student_info = {}
+    [1;34m11[0m:     student_name = student.css([31m[1;31m"[0m[31mh4.student-name[1;31m"[0m[31m[0m).text
+    [1;34m12[0m:     student_info[[33m:name[0m] = student_name
+    [1;34m13[0m:     students_array << student_info
+    [1;34m14[0m:   [32mend[0m
+ => [1;34m15[0m:   binding.pry
+    [1;34m16[0m:   students_array
+    [1;34m17[0m: [32mend[0m
+
