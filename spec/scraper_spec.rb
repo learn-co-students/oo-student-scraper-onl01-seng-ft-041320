@@ -23,7 +23,11 @@ describe "Scraper" do
 
   describe "#scrape_index_page" do
     it "is a class method that scrapes the student index page and a returns an array of hashes in which each hash represents one student" do
+<<<<<<< HEAD
       index_url = "https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"
+=======
+      index_url = "./fixtures/student-site/index.html"
+>>>>>>> a7af3c087586028f3eb0aa7f93871c096b63ebfe
       scraped_students = Scraper.scrape_index_page(index_url)
       expect(scraped_students).to be_a(Array)
       expect(scraped_students.first).to have_key(:location)
@@ -34,14 +38,22 @@ describe "Scraper" do
 
   describe "#scrape_profile_page" do
     it "is a class method that scrapes a student's profile page and returns a hash of attributes describing an individual student" do
+<<<<<<< HEAD
       profile_url = "https://learn-co-curriculum.github.io/student-scraper-test-page/students/joe-burgess.html"
+=======
+      profile_url = "./fixtures/student-site/students/joe-burgess.html"
+>>>>>>> a7af3c087586028f3eb0aa7f93871c096b63ebfe
       scraped_student = Scraper.scrape_profile_page(profile_url)
       expect(scraped_student).to be_a(Hash)
       expect(scraped_student).to match(student_joe_hash)
     end
 
     it "can handle profile pages without all of the social links" do
+<<<<<<< HEAD
       profile_url =  "https://learn-co-curriculum.github.io/student-scraper-test-page/students/david-kim.html"
+=======
+      profile_url = "./fixtures/student-site/students/david-kim.html"
+>>>>>>> a7af3c087586028f3eb0aa7f93871c096b63ebfe
       scraped_student = Scraper.scrape_profile_page(profile_url)
       expect(scraped_student).to be_a(Hash)
       expect(scraped_student).to match(student_david_hash)
