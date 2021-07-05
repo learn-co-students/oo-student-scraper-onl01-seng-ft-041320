@@ -5,13 +5,13 @@ require 'colorize'
 
 class CommandLineInterface
   BASE_PATH = "https://learn-co-curriculum.github.io/student-scraper-test-page/"
-
+  #adding notes for myself to look back on.
   def run
     make_students
     add_attributes_to_students
     display_students
   end
-
+  # THIS is why I had to return an array in the scrape_index_page method!
   def make_students
     students_array = Scraper.scrape_index_page(BASE_PATH + 'index.html')
     Student.create_from_collection(students_array)

@@ -1,0 +1,11 @@
+=> [1;34m#(Element:0x3fffe36f7b9c {[0m
+  name = [31m[1;31m"[0m[31ma[1;31m"[0m[31m[0m,
+  attributes = [ [1;34m#(Attr:0x3fffe36f7b38 {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mhttps://www.linkedin.com/in/jmburges[1;31m"[0m[31m[0m })],
+  children = [
+    [1;34m#(Element:0x3fffe36f75c0 {[0m
+      name = [31m[1;31m"[0m[31mimg[1;31m"[0m[31m[0m,
+      attributes = [
+        [1;34m#(Attr:0x3fffe36f7548 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31msocial-icon[1;31m"[0m[31m[0m }),
+        [1;34m#(Attr:0x3fffe36f7520 {[0m name = [31m[1;31m"[0m[31msrc[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31m../assets/img/linkedin-icon.png[1;31m"[0m[31m[0m })]
+      })]
+  })
